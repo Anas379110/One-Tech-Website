@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { isPublished, sortByDateDesc } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const categories = ['ذكاء_اصطناعي', 'أتمتة', 'هواتف', 'تطبيقات'];
+  return categories.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+const allArticles = await getCollection('articles', (e) => isPublished(e) && e.data.category === category);
+const sorted = sortByDateDesc(allArticles);
+---
+<BaseLayout title={category?.replace('_', ' ') ?? 'تصنيف'}>
+  <h1 class="text-2xl font-bold mb-6">{category?.replace('_', ' ')}</h1>
+  {sorted.length === 0 ? (
+    <p class="text-neutral-500">لا توجد مقالات بهذا التصنيف بعد.</p>
+  ) : (
+    <div class="grid gap-4 md:grid-cols-2">
+      {sorted.map((entry) => <ArticleCard entry={entry} />)}
+    </div>
+  )}
+</BaseLayout>
