@@ -1,20 +1,18 @@
-# One Tech — منصة أخبار التقنية والذكاء الاصطناعي
-**One Tech — AI & Technology News Platform** · التصنيف: موقع محتوى
-> ملف تعريفي بالمشروع ونطاقه؛ هذا المستودع يحتوي على التوثيق فقط ولا يتضمن الشفرة المصدرية.
+# One Tech — AI & Technology News Platform · Category: Content site
 > Project overview and scope; this repository contains documentation only, not implementation source code.
 
-## نبذة عن المشروع
-موقع محتوى تقني عربي يغطي أدوات الذكاء الاصطناعي وأنظمة الأتمتة الصناعية ومراجعات الهواتف والتطبيقات، على نطاق anasnet.com الفرعي.
+## Project Overview
+An Arabic technical content site covering AI tools, industrial automation systems, and phone and app reviews, hosted on the anasnet.com subdomain.
 
-## أبرز النقاط
-- محتوى أصلي يومي (30-50 مقالاً على الأقل قبل الإطلاق) عن الذكاء الاصطناعي والأتمتة والمراجعات
-- سريع، متجاوب، مؤمّن بـSSL، ومصادر ملتزمة بالسياسات
-- مبني لتحقيق متطلبات محتوى AdSense/Adsterra/Monetag/Zeydoo
+## Highlights
+- Original daily content (30-50 articles at least before launch) about artificial intelligence, automation, and reviews
+- Fast, responsive, SSL-secured, with sources compliant with policies
+- Built to meet content requirements of AdSense/Adsterra/Monetag/Zeydoo
 
-## الدور
-تطوير موقع محتوى تقني عربي متجاوب وتجهيزه للنشر وتحسين الظهور وإعدادات الأمان.
+## Role
+Develop a responsive Arabic tech content site, prepare it for publication, improve visibility, and configure security settings.
 
-## التقنيات المستخدمة
+## Technologies used
 HTML/CSS/JS, Cloudflare Pages, SSL/HTTPS, SEO, AdSense
 
-التفاصيل في [TECHSTACK.md](./TECHSTACK.md).
+Details in [TECHSTACK.md](./TECHSTACK.md).

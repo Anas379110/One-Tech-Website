@@ -1,4 +1,4 @@
-# 🛠️ التقنيات المستخدمة — One Tech — منصة أخبار التقنية والذكاء الاصطناعي
+# 🛠️ Technologies — One Tech — AI & Technology News Platform
 - HTML/CSS/JS
 - Cloudflare Pages
 - SSL/HTTPS
