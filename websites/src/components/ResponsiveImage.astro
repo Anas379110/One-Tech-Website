@@ -1,0 +1,28 @@
+---
+export interface Props {
+  src: string;       // base src without extension
+  alt: string;
+  width?: number;    // natural width in px
+  height?: number;   // natural height
+  class?: string;
+}
+const { src, alt, width, height, class: cls } = Astro.props;
+// decide responsive sizes (modify as needed)
+const sizes = '100vw';
+const srcset = `${src}.webp 1x, ${src}@2x.webp 2x, ${src}.jpg 1x, ${src}@2x.jpg 2x`;
+---
+
+<img
+  src={`${src}.webp`}
+  srcset={srcset}
+  alt={alt}
+  width={width}
+  height={height}
+  class={cls}
+  loading="lazy"
+  decoding="async"
+  style="object-fit: cover;"
+>
+
+// Astro will keep the placeholder until the image loads.
+// Add the component where you need images – e.g., in article previews.
